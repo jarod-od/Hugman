@@ -1,15 +1,28 @@
 package com.company;
 
-public class AnotherClassMain {
+import java.util.Scanner; // Импортируем класс Scanner для ввода с клавиатуры
 
-    public static void main(String[] args) {
+// Главный класс, который запускает игру
+public class AnotherClassMain {// (1) Класс с методом main
 
-        MainNewApproach hangman = new MainNewApproach("hello");
-        MainNewApproach hangman2 = new MainNewApproach("hello");
-        MainNewApproach hangman3 = new MainNewApproach();
-        System.out.println(hangman.);
-        System.out.println(hangman2);
-        System.out.println(hangman3);
+    public static void main(String[] args) {  // (2) Точка входа в программу
 
+        Scanner scanner = new Scanner(System.in);
+        MainNewApproach hangman = new MainNewApproach("hello"); // (3) Создаем экземпляр игры с загаданным словом "hello"
+
+         System.out.println(hangman.getDisplayWord().toString());
+           /* game.guessLetter('l');  // (4) Игрок вводит букву 'l', ожидаем "_ l l _ _"
+            game.guessLetter('e');  // (5) Игрок вводит букву 'e', ожидаем "e l l _ _"*/
+
+
+
+
+        scanner.close(); // Закрываем Scanner после завершения игры
+
+       // String test = Main.letterValidateSecondIteration("Garry","r");
+        // System.out.println(test);
+        Main testNew = new Main();
+        String test2 = testNew.letterValidateSecondIteration("Garry","r");
+        System.out.println(test2);
     }
 }

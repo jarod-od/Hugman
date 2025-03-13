@@ -18,7 +18,7 @@ public class Main {
         System.out.println("");
         //Main.letterValidateSecondIteration(wordImagine, letter);
 
-        String result = Main.letterValidateSecondIteration(wordImagine, letter);
+        String result = letterValidateSecondIteration(wordImagine, letter);
         System.out.println(result);
 
         Scanner s = new Scanner(System.in);
@@ -44,6 +44,7 @@ public class Main {
 
 
     }
+
 
     public static void letterValidate(String word, char[] wordParts) {
 
